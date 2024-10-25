@@ -1,0 +1,881 @@
+
+body {
+    margin: 0; /* Elimina márgenes por defecto */
+    line-height: normal;
+    font-family: Satoshi, sans-serif; 
+    position: relative;
+    background-image: url('/Users/maksim/Library/Mobile Documents/com~apple~CloudDocs/UC/Semestres Académicos/SEXTO SEMESTRE/pensamiento computacional/proyecto 2/texture1.png'); 
+    background-color: #000;
+    height: auto; /* Asegura que la altura se adapte al contenido */
+    overflow: auto; /* Permite el desplazamiento si el contenido es mayor que la ventana */
+}
+
+.navbar {
+    background-color: #fff; /* Color de fondo de la barra de navegación */
+    overflow: hidden; /* Asegura que el contenido esté contenido */
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0; /* Posición en la parte superior */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    z-index: 1000; /* Asegura que esté sobre otros contenidos */
+    font-family: Satoshi, sans-serif;
+    color: #000;
+}
+
+.navbar-list {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para mostrar los elementos de la lista en línea */
+}
+
+.navbar-item {
+    flex: 1; /* Cada elemento ocupa igual espacio */
+}
+
+.navbar-item a {
+    display: block; /* Hace que el área clicable sea toda la lista */
+    color: #000; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 14px 16px; /* Espaciado interno */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.navbar-item a:hover {
+    background-color: #ff0000; /* Color al pasar el mouse */
+    color: #fff;
+    font-family: Satoshi, sans-serif;    
+}
+
+.navbar-item a.active {
+    color: #fff; /* Color del texto activo (ejemplo: amarillo) */
+    background-color: #ff0000; /* Fondo del texto activo (opcional) */
+    font-family: Satoshi, sans-serif;    
+}
+
+
+
+:root {
+    
+    /* fonts */
+    
+    /* font sizes */
+    --font-size-xl: 20px;
+    --font-size-17xl: 36px;
+    --font-size-5xl: 24px;
+    
+    /* Colors */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-red: #ff0000;
+    
+}
+
+
+.piezas-sueltas {
+
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 1440px;
+    height: 808px;
+    object-fit: cover;
+    display: none;
+
+}
+
+.desktop-5-child {
+
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    background: linear-gradient(180deg, #fff 41.6%, rgba(255, 255, 255, 0));
+    width: 100%;
+    height: 809px;
+
+}
+
+.piezas-sueltas1 {
+
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 100%;
+    height: 808px;
+    object-fit: cover;
+
+}
+
+.desktop-5-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 50px 5px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    width: 100%;
+    height: 450px;
+}
+.mask-group-icon2 {
+    position: absolute;
+    top: 191px;
+    left: 585px;
+    width: 269px;
+    height: 106.9px;
+    object-fit: cover;
+    display: none;
+}
+.f {
+    font-family: Inter;
+    color: #ff0000;
+}
+.free {
+    margin: 0;
+}
+.free-universal-construction-container {
+    position: absolute;
+    top: 66px;
+    left: calc(50% - 194px);
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    height: 290px;
+}
+.logo{
+    position: absolute;
+    top: 167px;
+    left: 71px;
+    width: 413px;
+    height: 141px;
+    object-fit: cover;
+}
+.contexto {
+    position: absolute;
+    top: 437px;
+    left: 85px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #ff0000;
+    width: 151px;
+    height: 23px;
+}
+.proyecto {
+    position: absolute;
+    top: 437px;
+    left: 359px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 153px;
+    height: 25px;
+}
+.autores {
+    position: absolute;
+    top: 435px;
+    left: 606px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 153px;
+    height: 25px;
+}
+.analisis {
+    position: absolute;
+    top: 437px;
+    left: 882px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 153px;
+    height: 25px;
+}
+.conclusion {
+    position: absolute;
+    top: 435px;
+    left: 1158px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 171px;
+    height: 25px;
+}
+.surgen-de-la {
+    margin-top: 60px;
+    font-size: 30px;
+
+}
+.culturas-digitales-emergentes-container {
+    position: absolute;
+    top: 1441px;
+    left: calc(50% - 496px);
+    color: #fff;
+    display: inline-block;
+    width: 1047px;
+    font-size: 36px;
+    font-family: Satoshi, sans-serif;
+}
+.piezas-gris {
+    position: absolute;
+    top: 1792px;
+
+    width: 393px;
+    height: 329px;
+    object-fit: cover;
+
+    left: 50%; /* Mueve el borde izquierdo al centro de la página */
+    transform: translateX(-50%); /* Ajusta la posición para centrarla */
+}
+.hackers-en-arte {
+    position: absolute;
+    top: 2260px;
+    left: 551px;
+    font-size: 36px;
+    font-family: Satoshi, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.el-artculo-se {
+    position: absolute;
+    top: 2376px;
+    left: calc(50% + 62px);
+    font-size: 25px;
+    font-family: Satoshi, sans-serif;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    width: 538px;
+}
+.a-lo-largo {
+    position: absolute;
+    top: 2373px;
+    left: calc(50% - 519px);
+    font-size: 25px;
+    font-family: Satoshi, sans-serif;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    width: 538px;
+}
+
+
+.desktop-5 {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    height: 2735px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    font-family: Satoshi, sans-serif;
+
+}
+
+
+.mask-group-icon {
+    position: absolute;
+    top: 505px;
+    left: 0px;
+    width: 100%;
+    height: 808px;
+    object-fit: cover;
+    display: none;
+}
+.mask-group-icon1 {
+    position: absolute;
+    top: 191px;
+    left: 585px;
+    width: 269px;
+    height: 106.9px;
+    object-fit: cover;
+    display: none;
+}
+.desktop-6-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 50px 5px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    width: 100%;
+    height: 450px;
+}
+.f {
+    font-family: var(--font-inter);
+    color: var(--color-red);
+}
+.free {
+    margin: 0;
+}
+.free-universal-construction-container {
+    position: absolute;
+    top: 66px;
+    left: calc(50% - 194px);
+    font-size: 64px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 1012px;
+    height: 307px;
+    color: var(--color-black);
+    font-family: var(--font-inter);
+}
+.image-photoroom-85-2 {
+    position: absolute;
+    top: 167px;
+    left: 71px;
+    width: 413px;
+    height: 141px;
+    object-fit: cover;
+}
+.piezas-blancas {
+    position: absolute;
+    top: 904px;
+    left: 683px;
+    width: 666px;
+    height: 375px;
+    object-fit: cover;
+}
+.piezas-4p {
+    position: absolute;
+    top: 2052px;
+    left: 38px;
+    width: 645px;
+    height: 431px;
+    object-fit: cover;
+}
+.piezas-mezcla {
+    position: absolute;
+    top: 1958px;
+    left: 578px;
+    width: 825px;
+    height: 619px;
+    object-fit: cover;
+}
+.el-free-universal-construction-container {
+    position: absolute;
+    top: 1640px;
+    left: calc(50% + 21px);
+    display: inline-block;
+    width: 538px;
+}
+.de-esta-manera {
+    position: absolute;
+    top: 625px;
+    left: calc(50% + 21px);
+    display: inline-block;
+    width: 538px;
+}
+.free-universal-construction {
+    position: absolute;
+    top: 535px;
+    left: calc(50% - 516px);
+    font-size: var(--font-size-17xl);
+    display: inline-block;
+    text-align: center;
+    width: 1047px;
+}
+.el-free-universal {
+    position: absolute;
+    top: 625px;
+    left: calc(50% - 560px);
+    display: inline-block;
+    width: 380px;
+    text-align: left;
+}
+.el-proyecto-fuck-container {
+    position: absolute;
+    top: 1640px;
+    left: calc(50% - 560px);
+    display: inline-block;
+    width: 538px;
+}
+.qu-pretende-lograr {
+    position: absolute;
+    top: 1550px;
+    left: calc(50% - 265px);
+    font-size: var(--font-size-17xl);
+}
+.clasificacion {
+    position: absolute;
+    top: 856px;
+    left: 160px;
+    width: 404px;
+    height: 488px;
+    object-fit: cover;
+}
+.desktop-6 {
+    width: 100%;
+    position: relative;
+    height: 2735px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: #fff;
+    font-family: Satoshi, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*AUTORES*/
+
+.mask-group-icon {
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 100%;
+    height: 808px;
+    object-fit: cover;
+    display: none;
+}
+.desktop-17-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 50px 5px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    width: 100%;
+    height: 450px;
+}
+.mask-group-icon1 {
+    position: absolute;
+    top: 191px;
+    left: 585px;
+    width: 269px;
+    height: 106.9px;
+    object-fit: cover;
+    display: none;
+}
+.f {
+    font-family: Satoshi, sans-serif;
+    color: #ff0000
+}
+.free {
+    margin: 0;
+}
+.free-universal-construction-container {
+    position: absolute;
+    top: 66px;
+    left: calc(50% - 194px);
+    font-size: 64px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 1012px;
+    height: 307px;
+    color: #000;
+    font-family: Satoshi, sans-serif;
+}
+
+.golanlevine {
+    width: 622px;
+    top: 1100px;
+    left: calc(50% - 305px);;
+    position: relative;
+    font-size: 30px;
+    display: inline-block;
+    font-family: Satoshi, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.shawnsims {
+    width: 622px;
+    top: 2040px;
+    left: calc(50% - 925px);;
+    position: relative;
+    font-size: 30px;
+    display: inline-block;
+    font-family: Satoshi, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.estados-unidos-ttulos-container {
+position: absolute;
+top: 1231px;
+left: 278px;
+display: inline-block;
+width: 1034px;
+}
+.map-pin-icon {
+position: absolute;
+top: 2131px;
+left: 231px;
+width: 46px;
+height: 46px;
+overflow: hidden;
+}
+.estados-unidos1 {
+position: absolute;
+top: 2137px;
+left: 278px;
+display: inline-block;
+width: 1047px;
+}
+.no-disponible {
+position: absolute;
+top: 2228px;
+left: 278px;
+display: inline-block;
+width: 1047px;
+}
+.award-icon {
+position: absolute;
+top: 2217px;
+left: 222px;
+width: 56px;
+height: 56px;
+overflow: hidden;
+}
+.diseador-y-tecnlogo {
+position: absolute;
+top: 2305px;
+left: 278px;
+display: inline-block;
+width: 791px;
+}
+.briefcase-icon {
+position: absolute;
+top: 2302px;
+left: 222px;
+width: 51px;
+height: 51px;
+overflow: hidden;
+}
+.tecnologa-fabricacin-digita {
+position: absolute;
+top: 2442px;
+left: 278px;
+display: inline-block;
+width: 865px;
+}
+.vector-icon {
+position: absolute;
+height: 1.31%;
+width: 2.84%;
+top: 89.29%;
+right: 81.53%;
+bottom: 9.41%;
+left: 15.63%;
+max-width: 100%;
+overflow: hidden;
+max-height: 100%;
+}
+.map-pin-icon1 {
+position: absolute;
+top: 1226px;
+left: 230px;
+width: 46px;
+height: 46px;
+overflow: hidden;
+}
+.award-icon1 {
+position: absolute;
+top: 1298px;
+left: 225px;
+width: 56px;
+height: 56px;
+overflow: hidden;
+}
+.briefcase-icon1 {
+position: absolute;
+top: 1368px;
+left: 225px;
+width: 51px;
+height: 51px;
+overflow: hidden;
+}
+.vector-icon1 {
+position: absolute;
+height: 1.31%;
+width: 2.84%;
+top: 53.89%;
+right: 81.12%;
+bottom: 44.8%;
+left: 16.04%;
+max-width: 100%;
+overflow: hidden;
+max-height: 100%;
+}
+.fuck-promover-creatividad {
+position: absolute;
+top: 2495px;
+left: 278px;
+display: inline-block;
+width: 928px;
+}
+
+
+
+.golan-levineimg {
+    position: absolute;
+    top: 607px;
+    left: 50%;
+    width: 386px;
+    height: 481px;
+    object-fit: cover;
+    transform: translateX(-50%); /* Ajusta la posición para centrarla */    
+}
+.shawn-simsimg {
+    position: absolute;
+    top: 1792px;
+    left: 50%;
+    width: 224px;
+    height: 220px;
+    object-fit: cover;
+    transform: translateX(-50%); /* Ajusta la posición para centrarla */    
+}
+.desktop-17-item {
+    position: absolute;
+    top: 1691px;
+    left: 645px;
+    border-radius: 20px;
+    border: 3px solid var(--color-red);
+    box-sizing: border-box;
+    width: 250px;
+    height: 48px;
+}
+.ms-proyectos {
+    position: absolute;
+    top: 1694px;
+    left: calc(50% - 524px);
+    font-size: 32px;
+    font-weight: 500;
+    color: #ff0000;
+    text-align: center;
+    display: inline-block;
+    width: 1047px;
+}
+
+.ms-proyectos a {
+    color: #ff0000; /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.ms-proyectos a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.desktop-17 {
+    width: 100%;
+    position: relative;
+    height: 2735px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    font-family: Satoshi, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+/*ANALISIS*/
+
+.analisis {
+    width: 100%;
+    max-width: 1440px;
+    height: 4835px;
+    overflow: visible;
+    position: relative; /* Asegúrate de que el contenedor sea relativo */
+}
+
+.analisisimg {
+    margin: 0;
+    width: 100%;
+    height: 4835px; /* Establecer altura fija */
+    object-fit: cover; /* O 'contain', según lo que necesites */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONCLUSION*/
+
+.mask-group-icon {
+    position: absolute;
+    top: 505px;
+    left: 0px;
+    width: 1440px;
+    height: 808px;
+    object-fit: cover;
+    display: none;
+}
+.desktop-16-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 50px 5px rgba(0, 0, 0, 0.25);
+    background-color: var(--color-white);
+    width: 100%;
+    height: 450px;
+}
+.mask-group-icon1 {
+    position: absolute;
+    top: 191px;
+    left: 585px;
+    width: 269px;
+    height: 106.9px;
+    object-fit: cover;
+    display: none;
+}
+.f {
+    font-family: Satoshi, sans-serif;
+    color: var(--color-red);
+}
+.free {
+    margin: 0;
+}
+.free-universal-construction-container {
+    position: absolute;
+    top: 66px;
+    left: calc(50% - 194px);
+    font-size: 64px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 1012px;
+    height: 307px;
+    color: var(--color-black);
+}
+
+.image-photoroom-98-1 {
+    position: absolute;
+    top: 722px;
+    left: 942px;
+    width: 382px;
+    height: 374px;
+    object-fit: cover;
+}
+.conclusin {
+    position: absolute;
+    top: 617px;
+    left: 478px;
+    font-size: 38px;
+    display: inline-block;
+    text-align: center;
+    width: 484px;
+    height: 38px;
+}
+.referencias-bibliogrficas {
+    position: absolute;
+    top: 1664px;
+    left: 455px;
+    font-size: 38px;
+    display: inline-block;
+    text-align: center;
+    width: 484px;
+    height: 38px;
+}
+.el-free-universal-container {
+    position: absolute;
+    top: 712px;
+    left: 148px;
+    font-family: Satoshi, sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    width: 699px;
+}
+.as-es-cmo {
+    position: absolute;
+    top: 1178px;
+    left: 878px;
+    font-family: Satoshi, sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    width: 461px;
+}
+.biography-golan {
+    color: var(--color-white);
+}
+.httpflongcomarchivebioe1 {
+    text-decoration: underline;
+}
+.httpflongcomarchivebioe {
+    color: inherit;
+}
+.biography-golan-levin-and-co {
+    margin: 0;
+    color: var(--color-red);
+}
+.biography-golan-container {
+    position: absolute;
+    top: 1747px;
+    left: 148px;
+    font-family: Satoshi, sans-serif;
+    display: inline-block;
+    width: 1176px;
+}
+.poster-p-1-free-universal-cons-icon {
+    position: absolute;
+    top: 1143px;
+    left: 122px;
+    width: 666px;
+    height: 375px;
+    object-fit: cover;
+}
+.desktop-16 {
+    width: 100%;
+    position: relative;
+    height: 2432px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-6xl);
+    color: #fff;
+    font-family: var(--font-inter);
+}
+
+
+
+
+/* Footer Text */
+.footer-text {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    text-align: right;
+    font-size: 1.5vw;
+    opacity: 0.7;
+}
+
+.footer-text p {
+    margin-bottom: 0.5em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #050401;
+    color: #e0e0e0;
+    font-size: 1.2vw; /* Responsive */
+}
+
